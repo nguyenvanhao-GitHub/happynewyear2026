@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy New Year 2026 - Neon Party</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="party-started">
+
+  <audio id="bg-music" autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="container">
+    <div class="feliz">Happy New Year</div>
+    
+    <div class="ano_novo">
+      <span>202</span>
+      <span class="sete">6</span>
+    </div>
+
+    <div class="loi_chuc">
+      <p class="main-wish">CHÚC MỪNG NĂM MỚI 2026</p>
+      <p class="sub-wish">AN KHANG - THỊNH VƯỢNG - VẠN SỰ NHƯ Ý</p>
+    </div>
+
+    <div class="fogos">
+      <div class="f1"><span><i></i></span><span><i></i></span><span><i></i></span></div>
+      <div class="f2"><span><i></i></span><span><i></i></span><span><i></i></span></div>
+      <div class="f3"><span><i></i></span><span><i></i></span><span><i></i></span></div>
+      <div class="f4"><span><i></i></span><span><i></i></span><span><i></i></span></div>
+    </div>
+  </div>
+  
+  <a href="#" class="author">Happy New Year 2026</a>
+
+  <script>
+    window.addEventListener('load', function() {
+      var audio = document.getElementById("bg-music");
+      audio.volume = 0.6;
+      var promise = audio.play();
+
+      if (promise !== undefined) {
+        promise.then(_ => {
+        }).catch(error => {
+          document.body.addEventListener('click', function() {
+            audio.play();
+          }, { once: true });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
